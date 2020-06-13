@@ -1,2 +1,2 @@
-# Vendor-App
-apllication used to buy accesories online
+# Vendo
+apllication used to buy accesories online with delivery
