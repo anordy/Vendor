@@ -1,6 +1,7 @@
+import 'package:Vendor/pages/HomePage.dart';
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatelessWidget {
+class SignInPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -71,7 +72,10 @@ class MyHomePage extends StatelessWidget {
                     style:
                         TextStyle(color: Colors.deepOrange[400], fontSize: 25),
                   ),
-                  onPressed: () {}),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => HomePage()));
+                  }),
             )
           ],
         ),
