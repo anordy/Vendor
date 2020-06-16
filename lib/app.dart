@@ -1,4 +1,4 @@
-import 'package:Vendor/pages/sign_in_page.dart';
+import 'package:Vendor/screen/orders_screen.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepOrange,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: SignInPage(),
+      home: OrderScreen(),
     );
   }
 }

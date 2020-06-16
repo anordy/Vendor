@@ -1,4 +1,4 @@
-import 'package:Vendor/pages/HomePage.dart';
+import 'package:Vendor/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 class SignInPage extends StatelessWidget {
@@ -64,6 +64,10 @@ class SignInPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 15),
               child: RaisedButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (BuildContext context) => HomePage()));
+                  },
                   color: Colors.white,
                   padding:
                       EdgeInsets.only(top: 10, left: 40, right: 40, bottom: 10),
@@ -72,10 +76,7 @@ class SignInPage extends StatelessWidget {
                     style:
                         TextStyle(color: Colors.deepOrange[400], fontSize: 25),
                   ),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => HomePage()));
-                  }),
+                ),
             )
           ],
         ),
