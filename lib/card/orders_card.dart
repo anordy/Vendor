@@ -25,7 +25,7 @@ class OrdersCard extends StatelessWidget {
             ),
           ),
           Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(products.title,style: TextStyle(color: Colors.deepOrange,fontSize: 18),),
               Text(products.subtitle,style: TextStyle(color: Colors.grey),)
