@@ -33,7 +33,7 @@ class SignInPage extends StatelessWidget {
                     border: new OutlineInputBorder(
                         borderRadius:
                             const BorderRadius.all(const Radius.circular(8.0)),
-                        borderSide: new BorderSide())),
+                        borderSide: new BorderSide(color: Colors.white))),
               ),
             ),
             Padding(
@@ -45,7 +45,7 @@ class SignInPage extends StatelessWidget {
                     border: new OutlineInputBorder(
                         borderRadius:
                             const BorderRadius.all(const Radius.circular(8.0)),
-                        borderSide: new BorderSide())),
+                        borderSide: new BorderSide(color: Colors.white))),
               ),
             ),
             Padding(
@@ -64,19 +64,20 @@ class SignInPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 15),
               child: RaisedButton(
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (BuildContext context) => HomePage()));
-                  },
-                  color: Colors.white,
-                  padding:
-                      EdgeInsets.only(top: 10, left: 40, right: 40, bottom: 10),
-                  child: Text(
-                    'Sign in',
-                    style:
-                        TextStyle(color: Colors.deepOrange[400], fontSize: 25),
-                  ),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => HomePage()));
+                },
+                color: Colors.white,
+                padding:
+                    EdgeInsets.only(top: 10, left: 40, right: 40, bottom: 10),
+                child: Text(
+                  'Sign in',
+                  style: TextStyle(color: Colors.deepOrange[400], fontSize: 25),
                 ),
+              ),
             )
           ],
         ),

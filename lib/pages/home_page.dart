@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
     OrderScreen(),
     DispatchScreen(),
     NotificationScreen(),
-    AccountScreen()
+    AccountScreen(),
   ];
   void _onTappedItem(int index) {
     setState(() {
@@ -28,26 +28,26 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
       appBar: AppBar(title: Text('vendor')),
-      body: SingleChildScrollView(
-        child: _widgetOptions.elementAt(_selectedIndex),
-      ),
+      body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-              icon: Icon(Icons.account_circle), title: Text('Orders')),
+              backgroundColor: Colors.deepOrange,
+              icon: Icon(Icons.add_to_photos),
+              title: Text('Orders')),
           BottomNavigationBarItem(
-              icon: Icon(Icons.account_circle), title: Text('Dispatch')),
+              icon: Icon(Icons.date_range), title: Text('Dispatch')),
           BottomNavigationBarItem(
-              icon: Icon(Icons.account_circle), title: Text('Notifications')),
+              icon: Icon(Icons.add_shopping_cart),
+              title: Text('Notifications')),
           BottomNavigationBarItem(
               icon: Icon(Icons.account_circle), title: Text('Account'))
         ],
         onTap: _onTappedItem,
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blue,
-        unselectedItemColor: Colors.grey,
+        selectedItemColor: Colors.grey,
+        unselectedItemColor: Colors.white,
       ),
     );
   }
