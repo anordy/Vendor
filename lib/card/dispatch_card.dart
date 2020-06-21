@@ -27,11 +27,11 @@ class DispatchCard extends StatelessWidget {
               children: <Widget>[
                 Text(
                   products.time,
-                  style: TextStyle(color: Colors.blue, fontSize: 25),
+                  style: TextStyle(color: Colors.blue, fontSize: 20),
                 ),
                 Text(
                   products.title,
-                  style: TextStyle(color: Colors.deepOrange, fontSize: 18),
+                  style: TextStyle(color: Colors.deepOrange, fontSize: 16),
                 )
               ],
             ),

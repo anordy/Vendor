@@ -31,7 +31,84 @@ class EditPage extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: RaisedButton(
                 color: Colors.deepOrange,
-                onPressed: () {},
+                onPressed: () {
+                     showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            
+                            shape: new OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(20),
+                              borderSide: BorderSide.none
+                            ),
+                              backgroundColor: Colors.deepOrange,
+                              content: Container(
+                                height: 230,
+                                child: Column(
+                                  children: <Widget>[
+                                    Text(
+                                      'Edit Branch',
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 20),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                           top: 5,),
+                                      child: TextFormField(
+                                        decoration: InputDecoration(
+                                            hintText: 'Kariakoo',
+                                            hintStyle: new TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 15),
+                                            border: new OutlineInputBorder(
+                                                borderRadius: const BorderRadius
+                                                        .all(
+                                                    const Radius.circular(8.0)),
+                                                borderSide: new BorderSide(
+                                                    color: Colors.white))),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                          top: 5,),
+                                      child: TextFormField(
+                                        decoration: InputDecoration(
+                                            hintText: '+255 765 639 173',
+                                            hintStyle: new TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 15),
+                                            border: new OutlineInputBorder(
+                                                borderRadius: const BorderRadius
+                                                        .all(
+                                                    const Radius.circular(8.0)),
+                                                borderSide: new BorderSide(
+                                                    color: Colors.white))),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: RaisedButton(
+                                        color: Colors.deepOrange,
+                                        onPressed: () {},
+                                        child: Text(
+                                          'Save',
+                                          style: TextStyle(color: Colors.white),
+                                        ),
+                                        shape: new OutlineInputBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(15),
+                                            borderSide: new BorderSide(
+                                                color: Colors.white)),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ));
+                        });
+                 
+                },
                 child: Text(
                   'Edit',
                   style: TextStyle(color: Colors.white),
@@ -240,8 +317,12 @@ class EditPage extends StatelessWidget {
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                )
+                ),
               ],
+            ),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Divider(),
             )
           ],
         ),
