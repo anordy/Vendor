@@ -37,12 +37,17 @@ class _HomePageState extends State<HomePage> {
               icon: Icon(Icons.add_to_photos),
               title: Text('Orders')),
           BottomNavigationBarItem(
-              icon: Icon(Icons.date_range), title: Text('Dispatch')),
+              backgroundColor: Colors.deepOrange,
+              icon: Icon(Icons.date_range),
+              title: Text('Dispatch')),
           BottomNavigationBarItem(
+              backgroundColor: Colors.deepOrange,
               icon: Icon(Icons.add_shopping_cart),
               title: Text('Notifications')),
           BottomNavigationBarItem(
-              icon: Icon(Icons.account_circle), title: Text('Account'))
+              backgroundColor: Colors.deepOrange,
+              icon: Icon(Icons.account_circle),
+              title: Text('Account'))
         ],
         onTap: _onTappedItem,
         currentIndex: _selectedIndex,

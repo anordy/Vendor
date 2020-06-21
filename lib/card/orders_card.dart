@@ -1,4 +1,5 @@
 import 'package:Vendor/model/products_model.dart';
+import 'package:Vendor/pages/order_details.dart';
 import 'package:flutter/material.dart';
 
 class OrdersCard extends StatelessWidget {
@@ -40,7 +41,9 @@ class OrdersCard extends StatelessWidget {
                 RaisedButton(
                   color: Colors.deepOrange,
                   textColor: Colors.white,
-                  onPressed: (){},
+                  onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => OrderDetailsPage()));
+                  },
                   child: Text('Select',style: TextStyle(fontSize: 15),),
                   shape: new OutlineInputBorder(
                     borderRadius: const BorderRadius.all(
