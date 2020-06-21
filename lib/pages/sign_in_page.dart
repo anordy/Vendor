@@ -64,6 +64,10 @@ class SignInPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 15),
               child: RaisedButton(
+                shape: new OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide.none
+                ),
                 onPressed: () {
                   Navigator.push(
                       context,

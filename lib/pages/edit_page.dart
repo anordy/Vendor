@@ -132,7 +132,7 @@ class EditPage extends StatelessWidget {
                             ),
                               backgroundColor: Colors.deepOrange,
                               content: Container(
-                                height: 300,
+                                height: 230,
                                 child: Column(
                                   children: <Widget>[
                                     Text(
@@ -144,7 +144,7 @@ class EditPage extends StatelessWidget {
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.only(
-                                          left: 48, top: 30, right: 48),
+                                           top: 5,),
                                       child: TextFormField(
                                         decoration: InputDecoration(
                                             hintText: 'Location',
@@ -161,7 +161,7 @@ class EditPage extends StatelessWidget {
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.only(
-                                          left: 48, top: 30, right: 48),
+                                          top: 5,),
                                       child: TextFormField(
                                         decoration: InputDecoration(
                                             hintText: 'Phone Number',
